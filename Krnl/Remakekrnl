@@ -224,14 +224,14 @@ TextButton.TextSize = 35
 
 -- Scripts
 
-local function GRMV_fake_script() -- Frame.LocalScript 
+local function RGHQYBZ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(GRMV_fake_script)()
-local function SKLOS_fake_script() -- Execute.LocalScript 
+coroutine.wrap(RGHQYBZ_fake_script)()
+local function DIQHC_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local button = script.Parent
@@ -240,8 +240,8 @@ local function SKLOS_fake_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(SKLOS_fake_script)()
-local function TINLEYU_fake_script() -- Clear.LocalScript 
+coroutine.wrap(DIQHC_fake_script)()
+local function SBVW_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local button = script.Parent
@@ -250,8 +250,8 @@ local function TINLEYU_fake_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(TINLEYU_fake_script)()
-local function RTIO_fake_script() -- Open.LocalScript 
+coroutine.wrap(SBVW_fake_script)()
+local function YVVAVU_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local button = script.Parent
@@ -259,8 +259,8 @@ local function RTIO_fake_script() -- Open.LocalScript
 		print("Opened File")
 	end)
 end
-coroutine.wrap(RTIO_fake_script)()
-local function ATEP_fake_script() -- save.LocalScript 
+coroutine.wrap(YVVAVU_fake_script)()
+local function ZLPPAKP_fake_script() -- save.LocalScript 
 	local script = Instance.new('LocalScript', save)
 
 	local button = script.Parent
@@ -268,8 +268,8 @@ local function ATEP_fake_script() -- save.LocalScript
 		print("Saved File")
 	end)
 end
-coroutine.wrap(ATEP_fake_script)()
-local function JXXVSGN_fake_script() -- Inject.LocalScript 
+coroutine.wrap(ZLPPAKP_fake_script)()
+local function IWUD_fake_script() -- Inject.LocalScript 
 	local script = Instance.new('LocalScript', Inject)
 
 	local button = script.Parent
@@ -277,8 +277,8 @@ local function JXXVSGN_fake_script() -- Inject.LocalScript
 		print("Injected Succesfully")
 	end)
 end
-coroutine.wrap(JXXVSGN_fake_script)()
-local function ENAHJ_fake_script() -- ScriptIY.LocalScript 
+coroutine.wrap(IWUD_fake_script)()
+local function OVHYES_fake_script() -- ScriptIY.LocalScript 
 	local script = Instance.new('LocalScript', ScriptIY)
 
 	local button = script.Parent
@@ -286,8 +286,8 @@ local function ENAHJ_fake_script() -- ScriptIY.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(ENAHJ_fake_script)()
-local function EMUHGT_fake_script() -- ScriptDDE.LocalScript 
+coroutine.wrap(OVHYES_fake_script)()
+local function KRYCEL_fake_script() -- ScriptDDE.LocalScript 
 	local script = Instance.new('LocalScript', ScriptDDE)
 
 	local button = script.Parent
@@ -295,8 +295,8 @@ local function EMUHGT_fake_script() -- ScriptDDE.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 	end)
 end
-coroutine.wrap(EMUHGT_fake_script)()
-local function LPDJY_fake_script() -- UncTest.LocalScript 
+coroutine.wrap(KRYCEL_fake_script)()
+local function YYPZQ_fake_script() -- UncTest.LocalScript 
 	local script = Instance.new('LocalScript', UncTest)
 
 	local button = script.Parent
@@ -304,8 +304,8 @@ local function LPDJY_fake_script() -- UncTest.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/JanXFX/Unc-Test/main/Unc%20test/KrnlV2"))()
 	end)
 end
-coroutine.wrap(LPDJY_fake_script)()
-local function UDIRPM_fake_script() -- Frame.More Unc 
+coroutine.wrap(YYPZQ_fake_script)()
+local function HYVZWN_fake_script() -- Frame.More Unc 
 	local script = Instance.new('LocalScript', Frame)
 
 	--[[ hello very cool incognito / solara (mostly incognito because solara has most of these functions, just not all) script showcase!! 
@@ -2005,8 +2005,8 @@ local function UDIRPM_fake_script() -- Frame.More Unc
 	
 	
 end
-coroutine.wrap(UDIRPM_fake_script)()
-local function DGJLDNZ_fake_script() -- Frame_2.Script 
+coroutine.wrap(HYVZWN_fake_script)()
+local function JUQQGZ_fake_script() -- Frame_2.Script 
 	local script = Instance.new('Script', Frame_2)
 
 	-- Reference to the TweenService
@@ -2045,8 +2045,8 @@ local function DGJLDNZ_fake_script() -- Frame_2.Script
 	fadeOut()
 	
 end
-coroutine.wrap(DGJLDNZ_fake_script)()
-local function MOIOTD_fake_script() -- TextButton.Script 
+coroutine.wrap(JUQQGZ_fake_script)()
+local function CLND_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	-- Reference to the TweenService
@@ -2085,8 +2085,8 @@ local function MOIOTD_fake_script() -- TextButton.Script
 	fadeOut()
 	
 end
-coroutine.wrap(MOIOTD_fake_script)()
-local function QNZBT_fake_script() -- TextButton.Script 
+coroutine.wrap(CLND_fake_script)()
+local function TGHWAS_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	while true do
@@ -2117,4 +2117,19 @@ local function QNZBT_fake_script() -- TextButton.Script
 		end
 	end
 end
-coroutine.wrap(QNZBT_fake_script)()
+coroutine.wrap(TGHWAS_fake_script)()
+local function EKYF_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(EKYF_fake_script)()
+local function VFOMCSQ_fake_script() -- Frame_2.Script 
+	local script = Instance.new('Script', Frame_2)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+	
+end
+coroutine.wrap(VFOMCSQ_fake_script)()
