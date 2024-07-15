@@ -9,7 +9,7 @@
 
 -- Instances
 
-local ScreenGui = Instance.new("ScreenGui")
+local Executor = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ExecutorTAB = Instance.new("Frame")
 local BackGround = Instance.new("Frame")
@@ -22,15 +22,19 @@ local Inject = Instance.new("TextButton")
 local SavedScripts = Instance.new("Frame")
 local ScriptIY = Instance.new("TextButton")
 local ScriptDDE = Instance.new("TextButton")
+local UncTest = Instance.new("TextButton")
 local TextBox = Instance.new("TextBox")
 local ImageLabel = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
 
 -- Properties
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Executor.Name = "Executor"
+Executor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Executor.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
+Frame.Parent = Executor
 Frame.BackgroundColor3 = Color3.new(1, 1, 1)
 Frame.BorderColor3 = Color3.new(0, 0, 0)
 Frame.BorderSizePixel = 0
@@ -161,6 +165,19 @@ ScriptDDE.Text = "Dark Dex V3"
 ScriptDDE.TextColor3 = Color3.new(0.764706, 0.764706, 0.764706)
 ScriptDDE.TextSize = 14
 
+UncTest.Name = "Unc Test"
+UncTest.Parent = SavedScripts
+UncTest.BackgroundColor3 = Color3.new(0.6, 0.6, 0.6)
+UncTest.BackgroundTransparency = 1
+UncTest.BorderColor3 = Color3.new(0, 0, 0)
+UncTest.BorderSizePixel = 0
+UncTest.Position = UDim2.new(0.103448279, 0, 0.233922601, 0)
+UncTest.Size = UDim2.new(0, 68, 0, 21)
+UncTest.Font = Enum.Font.SourceSans
+UncTest.Text = "Unc Test"
+UncTest.TextColor3 = Color3.new(0.764706, 0.764706, 0.764706)
+UncTest.TextSize = 14
+
 TextBox.Parent = ExecutorTAB
 TextBox.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
 TextBox.BorderColor3 = Color3.new(0, 0, 0)
@@ -172,9 +189,9 @@ TextBox.Font = Enum.Font.SourceSans
 TextBox.MultiLine = true
 TextBox.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
 TextBox.PlaceholderText = "-- By Nexus And Coded By Halp Me"
-TextBox.Text = ""
+TextBox.Text = "im back"
 TextBox.TextColor3 = Color3.new(1, 1, 1)
-TextBox.TextSize = 14
+TextBox.TextSize = 15
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
 
@@ -187,9 +204,108 @@ ImageLabel.Position = UDim2.new(-0.000254517683, 0, -0.000857755076, 0)
 ImageLabel.Size = UDim2.new(0, 30, 0, 30)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=5669036604"
 
+Frame_2.Parent = Executor
+Frame_2.BackgroundColor3 = Color3.new(0.223529, 0.223529, 0.223529)
+Frame_2.BorderColor3 = Color3.new(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0943204835, 0, 0.139677688, 0)
+Frame_2.Size = UDim2.new(0, 579, 0, 317)
+
+TextButton.Parent = Frame_2
+TextButton.BackgroundColor3 = Color3.new(0.223529, 0.223529, 0.223529)
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.319597691, 0, 0.382861227, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Welcome User"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextSize = 35
+
 -- Scripts
 
-local function YDBTSGD_fake_script() -- Frame.UNC_Boost 
+local function GRMV_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(GRMV_fake_script)()
+local function SKLOS_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.TextBox
+	button.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
+	end)
+end
+coroutine.wrap(SKLOS_fake_script)()
+local function TINLEYU_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.TextBox
+	button.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+end
+coroutine.wrap(TINLEYU_fake_script)()
+local function RTIO_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		print("Opened File")
+	end)
+end
+coroutine.wrap(RTIO_fake_script)()
+local function ATEP_fake_script() -- save.LocalScript 
+	local script = Instance.new('LocalScript', save)
+
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		print("Saved File")
+	end)
+end
+coroutine.wrap(ATEP_fake_script)()
+local function JXXVSGN_fake_script() -- Inject.LocalScript 
+	local script = Instance.new('LocalScript', Inject)
+
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		print("Injected Succesfully")
+	end)
+end
+coroutine.wrap(JXXVSGN_fake_script)()
+local function ENAHJ_fake_script() -- ScriptIY.LocalScript 
+	local script = Instance.new('LocalScript', ScriptIY)
+
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(ENAHJ_fake_script)()
+local function EMUHGT_fake_script() -- ScriptDDE.LocalScript 
+	local script = Instance.new('LocalScript', ScriptDDE)
+
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+	end)
+end
+coroutine.wrap(EMUHGT_fake_script)()
+local function LPDJY_fake_script() -- UncTest.LocalScript 
+	local script = Instance.new('LocalScript', UncTest)
+
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/JanXFX/Unc-Test/main/Unc%20test/KrnlV2"))()
+	end)
+end
+coroutine.wrap(LPDJY_fake_script)()
+local function UDIRPM_fake_script() -- Frame.More Unc 
 	local script = Instance.new('LocalScript', Frame)
 
 	--[[ hello very cool incognito / solara (mostly incognito because solara has most of these functions, just not all) script showcase!! 
@@ -1886,77 +2002,119 @@ local function YDBTSGD_fake_script() -- Frame.UNC_Boost
 	print('Done adding functions!')
 	QueueGetIdentity()
 	getgenv().MoreUNC = true
+	
+	
 end
-coroutine.wrap(YDBTSGD_fake_script)()
-local function RVWN_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(UDIRPM_fake_script)()
+local function DGJLDNZ_fake_script() -- Frame_2.Script 
+	local script = Instance.new('Script', Frame_2)
 
-	script.Parent.Draggable = true
-	script.Parent.Active = true
+	-- Reference to the TweenService
+	local TweenService = game:GetService("TweenService")
+	
+	-- Reference to the Frame
+	local frame = script.Parent
+	
+	-- Tween information
+	local tweenInfo = TweenInfo.new(
+		5, -- Duration (5 seconds)
+		Enum.EasingStyle.Linear, -- Easing style
+		Enum.EasingDirection.Out, -- Easing direction
+		0, -- Number of repeats (0 means it won't repeat)
+		false, -- Reverse (false means it won't play in reverse)
+		0 -- Delay time
+	)
+	
+	-- Properties to tween
+	local tweenGoal = {
+		BackgroundTransparency = 1
+	}
+	
+	-- Create the tween
+	local tween = TweenService:Create(frame, tweenInfo, tweenGoal)
+	
+	-- Function to start the tween
+	local function fadeOut()
+		tween:Play()
+		tween.Completed:Connect(function()
+			frame.Visible = false -- Hide the frame after fading out
+		end)
+	end
+	
+	-- Start the fade out process
+	fadeOut()
+	
 end
-coroutine.wrap(RVWN_fake_script)()
-local function GRBAKW_fake_script() -- Execute.LocalScript 
-	local script = Instance.new('LocalScript', Execute)
+coroutine.wrap(DGJLDNZ_fake_script)()
+local function MOIOTD_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
 
-	local button = script.Parent
-	local textbox = script.Parent.Parent.TextBox
-	button.MouseButton1Click:Connect(function()
-		loadstring(textbox.Text)()
-	end)
+	-- Reference to the TweenService
+	local TweenService = game:GetService("TweenService")
+	
+	-- Reference to the Frame
+	local frame = script.Parent
+	
+	-- Tween information
+	local tweenInfo = TweenInfo.new(
+		5, -- Duration (5 seconds)
+		Enum.EasingStyle.Linear, -- Easing style
+		Enum.EasingDirection.Out, -- Easing direction
+		0, -- Number of repeats (0 means it won't repeat)
+		false, -- Reverse (false means it won't play in reverse)
+		0 -- Delay time
+	)
+	
+	-- Properties to tween
+	local tweenGoal = {
+		BackgroundTransparency = 1
+	}
+	
+	-- Create the tween
+	local tween = TweenService:Create(frame, tweenInfo, tweenGoal)
+	
+	-- Function to start the tween
+	local function fadeOut()
+		tween:Play()
+		tween.Completed:Connect(function()
+			frame.Visible = false -- Hide the frame after fading out
+		end)
+	end
+	
+	-- Start the fade out process
+	fadeOut()
+	
 end
-coroutine.wrap(GRBAKW_fake_script)()
-local function UYGUIAI_fake_script() -- Clear.LocalScript 
-	local script = Instance.new('LocalScript', Clear)
+coroutine.wrap(MOIOTD_fake_script)()
+local function QNZBT_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
 
-	local button = script.Parent
-	local textbox = script.Parent.Parent.TextBox
-	button.MouseButton1Click:Connect(function()
-		textbox.Text = ""
-	end)
+	while true do
+		script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
+		end
+	end
 end
-coroutine.wrap(UYGUIAI_fake_script)()
-local function ZCTV_fake_script() -- Open.LocalScript 
-	local script = Instance.new('LocalScript', Open)
-
-	local button = script.Parent
-	button.MouseButton1Click:Connect(function()
-		print("Opened File")
-	end)
-end
-coroutine.wrap(ZCTV_fake_script)()
-local function XNRYZW_fake_script() -- save.LocalScript 
-	local script = Instance.new('LocalScript', save)
-
-	local button = script.Parent
-	button.MouseButton1Click:Connect(function()
-		print("Saved File")
-	end)
-end
-coroutine.wrap(XNRYZW_fake_script)()
-local function SVAHZD_fake_script() -- Inject.LocalScript 
-	local script = Instance.new('LocalScript', Inject)
-
-	local button = script.Parent
-	button.MouseButton1Click:Connect(function()
-		print("Nexues idk put what you want it here to say")
-	end)
-end
-coroutine.wrap(SVAHZD_fake_script)()
-local function ADBMZYZ_fake_script() -- ScriptIY.LocalScript 
-	local script = Instance.new('LocalScript', ScriptIY)
-
-	local button = script.Parent
-	button.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-	end)
-end
-coroutine.wrap(ADBMZYZ_fake_script)()
-local function KKKTPQ_fake_script() -- ScriptDDE.LocalScript 
-	local script = Instance.new('LocalScript', ScriptDDE)
-
-	local button = script.Parent
-	button.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
-	end)
-end
-coroutine.wrap(KKKTPQ_fake_script)()
+coroutine.wrap(QNZBT_fake_script)()
